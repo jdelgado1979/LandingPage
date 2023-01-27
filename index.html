@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/style.css">
+    <script src="main.js" defer></script>
+    <title>Portfolio</title>
+    <script data-require="jquery@*" data-semver="2.0.3" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script>
+      function addMailIframe() {
+        $('<iframe src="mailto:vdelga001@gmail.com?subject=Just saying hello">')
+           .appendTo('#myIframe')
+           .css("display", "none");
+      }
+
+      function addMailIframeSrcdoc() {
+        
+        var body   = "";
+        var script = "<scr" + "ipt>" + "window.top.location = 'mailto:vdelga001@gmail.com?subject=Just saying hello';" + "</scr" + "ipt>";
+        $(`<iframe srcdoc="` + script + body + `">`)
+           .appendTo('#myIframeSrcdoc')
+           .css("display", "none")
+           ;
+      }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="/images/v-KhgscOc80CI-unsplash.jpg" alt="a cool astronaut">
+        
+        <nav>
+            <ul>
+              <li><a href="https://github.com/jdelgado1979" target="_blank">Intro</a></li>
+              <li><a href="#C1">Projects</a></li>
+              <li><a href="#C2">Quote</a></li>
+              <li><a href="#C3">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="introBlock">
+  
+   <div class="block1">
+    <h1>This is my portfolio page</h1>
+    <p>Where dreams begin and they just get <span id="a">bigger</span> and <span id="b">bigger</span> and <span id="c">bigger</span> each time</p>
+    <button class="button1">Sign up</button>
+   </div>
+ 
+   <div class="block2">  
+    <img class="astronaut" src="/images/monica-garniga-XClNDg9Z9Ag-unsplash.jpg" alt="a cool astronaut">
+   </div>
+
+  </div>
+  
+  <div class="projects" id="C1">
+    
+    <div class="project1">
+   
+    <img class="Calculator" src="/images/roman-skrypnyk-DEga33BYvmA-unsplash.jpg" alt="a Calculator">
+    
+    <p>How about a  <a href="https://jdelgado1979.github.io/Calculator/">Calculator</a> </p>
+    </div>
+    
+    <div class="project2">
+    
+    <img class="game" src="/images/rock-paper-scissors-156171_960_720.png" alt="paper rock scissors">
+    
+    <p>How about a game of<br /> 
+      <a href="https://jdelgado1979.github.io/paperRockandScissorsTOP/">Paper Rock & Scissors</a></p>
+    </div>
+    
+    <div class="project3">
+    <img class="sketch" src="/images/design-2234069_960_720.png" alt="a pc with a paint sketch">
+    <p>How about your own  <a href="https://jdelgado1979.github.io/Etch-A-Sketch/">paint sketcher</a></p>
+    </div>
+    
+    <div class="project4">
+    <img class="typewriter" src="/images/thom-milkovic-FTNGfpYCpGM-unsplash.jpg" alt="a typewriter">
+    <p>How about a<br />
+      <a href="https://codepen.io/Johan1976/pen/XWgYKNK">quote maker</a></p>
+    </div>
+    
+  </div>
+
+  <div class="quote" id="C2">
+    <img class="success" src="/images/ian-stauffer-bH7kZ0yazB0-unsplash.jpg" alt="a man sitting on top of a mountaing with his hand raised">
+    <cite>“Study while others are sleeping;<br> work while others are loafing;<br> prepare while others are playing;<br> and dream while others are wishing.”
+        <br> <span>― William A. Ward</span> </cite>
+  </div>
+
+  <div class="contact" id="C3">
+    <img class="rocket" src="/images/andy-hermawan-bVBvv5xlX3g-unsplash.jpg" alt="a cool rocket">  
+    <div class="blocka">
+        
+        <div class="subblock">
+            <h3>Contact Information</h3> 
+            <h4>For more cool stuff and inquiries, feel free to drop a line</h4> 
+        </div>
+        <input class="btn2" type="button" onclick="window.location.href='mailto:vdelga001@gmail.com?subject=Just saying hello';" value="Contact us" />
+        
+    </div>
+    <img class="astronaut2" src="/images/v-KhgscOc80CI-unsplash2.jpg" alt="a cool astronaut part 2">
+  </div>
+       
+       <footer>
+        <p>©Copyright 2023 The Odin Project. All rights reversed.</p>
+      </footer>
+</body>
+</html>
